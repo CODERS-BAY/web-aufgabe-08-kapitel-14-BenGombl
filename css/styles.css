@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+    font-family: "rowdies", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #503030;
+    background-image: linear-gradient(0deg, black, #503030);
+    background-attachment: fixed;
+}
+
+main {
+
+    margin: auto;
+    font-size: 200%;
+}
+
+header {
+    background-color: #101050;
+    background-image: url(../img/titlescreen.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 95vh;
+    max-height: 50vw;
+    padding: 0.5rem;
+    margin: none;
+
+    border-bottom: black solid 1rem;
+    box-shadow: 0 0 1rem lightgray;
+    position: sticky;
+    top: -50vw;
+    z-index: 11;
+
+
+}
+
+header h1 {
+    color: lightgray;
+    text-align: center;
+    font-size: 5rem;
+    display: none;
+}
+
+#logo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    box-shadow: -1rem -1rem 2rem black;
+    
+}
+
+p {
+
+
+    color: lightgray;
+
+
+    margin: 0;
+    padding: 0.5rem;
+
+
+}
+
+h2 {
+    background-image: linear-gradient(0deg, black, #503030);
+    background-attachment: fixed;
+    color: lightcyan;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1rem 1rem #402020cc;
+
+    font-family: "Abril Fatface";
+
+
+}
+
+.dreiD {
+    text-shadow: -0.2rem 0.2rem 0 red;
+    color: linen;
+
+}
+
+
+
+section {
+
+    border-bottom: 1rem solid black;
+    width: 80%;
+    max-width: 80rem;
+    margin: auto;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+
+
+section.background:nth-of-type(1) {
+    background-image: url(../img/background_01.jfif);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+section.background:nth-of-type(2) {
+    background-image: url(../img/background_02.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.background:nth-of-type(3) {
+    background-image: url(../img/screenshot_01.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+article {
+    position: relative;
+
+
+
+    background-image: linear-gradient(0deg, #000000ff, #50303099);
+    background-attachment: fixed;
+
+
+
+
+
+}
+
+article figure {
+
+    float: right;
+
+    text-align: right;
+    background-color: darkslategray;
+    color: #f0f0b0;
+
+    margin: 2rem;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+
+    box-shadow: 0 0 1.5rem dimgrey;
+    border-left: 0.4rem solid black;
+    border-bottom: 0.4rem solid black;
+
+
+    border-radius: 0.3rem;
+
+    z-index: 11;
+
+}
+
+section:nth-of-type(even) article figure {
+    float: left;
+}
+
+article figure img {
+    margin: auto;
+    width: 25rem;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+div::after {
+    content: " ";
+    clear: both;
+
+    display: block;
+
+}
+
+article::after {
+    content: "";
+    clear: both;
+    background-color: #000000cc;
+    display: block;
+
+}
+
+footer {
+    background-image: url(../img/footer.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    height: 11vw;
+
+    color: white;
+    padding: 1rem;
+    text-align: right;
+
+    border-top: 0.4rem solid black;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    section:nth-of-type(even) article figure,
+    article figure {
+        float: none;
+        width: 26rem;
+        margin: auto;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        padding: 1rem 8rem;
+    }
+    #logo{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 760px) {
+    main {
+        font-size: 120%;
+    }
+
+    p {
+        padding: 1rem 3rem;
+    }
+    
+    figure{
+        padding: 0;
+    }
+   
+    figure{
+        width: 95vw;
+    }
+}
